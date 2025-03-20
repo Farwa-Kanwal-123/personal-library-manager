@@ -465,7 +465,6 @@ def display_dashboard(conn, is_new_user):
                 st.markdown("---")
         else:
             st.info("📚 No books added yet. Start building your library by adding your first book!")
-            st.button("➕ Add Your First Book", on_click=lambda: st.session_state.update({"menu": "Add Book"}))
     
     with col2:
         # Reading progress

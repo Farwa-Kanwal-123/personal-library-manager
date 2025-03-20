@@ -26,13 +26,9 @@ st.set_page_config(
 def load_css():
     st.markdown("""
     <style>
-    .main {
-        background-color: #1e1e2e;
-        color: #cdd6f4;
-    }
     .stButton button {
-        background-color: #89b4fa;
-        color: #1e1e2e;
+        background-color: #4f8bf9;
+        color: white;
         font-weight: bold;
         border-radius: 5px;
         border: none;
@@ -40,39 +36,37 @@ def load_css():
         transition: all 0.3s ease;
     }
     .stButton button:hover {
-        background-color: #b4befe;
+        background-color: #3670d6;
         transform: translateY(-2px);
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     }
     .card {
-        background-color: #313244;
+        background-color: #f8f9fa;
         border-radius: 10px;
         padding: 1.5rem;
         margin-bottom: 1rem;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         transition: transform 0.3s ease;
-        color: #cdd6f4;  /* Light text color for dark background */
     }
     .card:hover {
         transform: translateY(-5px);
     }
     .card h3 {
-        color: #89b4fa;  /* Light blue for titles */
+        color: #4f8bf9;
         margin-bottom: 0.5rem;
     }
     .card p {
-        color: #cdd6f4;  /* Light text color */
         margin-bottom: 0.3rem;
     }
     .title {
-        color: #89b4fa;
+        color: #4f8bf9;
         font-size: 2.5rem;
         font-weight: bold;
         margin-bottom: 1rem;
         text-align: center;
     }
     .subtitle {
-        color: #a6e3a1;
+        color: #4CAF50;
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
     }
@@ -80,14 +74,13 @@ def load_css():
         gap: 2px;
     }
     .stTabs [data-baseweb="tab"] {
-        background-color: #313244;
+        background-color: #f1f3f4;
         border-radius: 4px 4px 0px 0px;
         padding: 10px 20px;
-        color: #cdd6f4;
     }
     .stTabs [aria-selected="true"] {
-        background-color: #89b4fa;
-        color: #1e1e2e;
+        background-color: #4f8bf9;
+        color: white;
     }
     .book-cover {
         border-radius: 5px;
@@ -124,7 +117,7 @@ def load_css():
         font-size: 1.5rem;
     }
     .dashboard-card {
-        background-color: #313244;
+        background-color: #f8f9fa;
         border-radius: 10px;
         padding: 1.5rem;
         margin-bottom: 1rem;
@@ -137,7 +130,7 @@ def load_css():
         box-shadow: 0 8px 15px rgba(0,0,0,0.2);
     }
     .dashboard-card-title {
-        color: #89b4fa;
+        color: #4f8bf9;
         font-size: 1.2rem;
         font-weight: bold;
         margin-bottom: 1rem;
@@ -148,7 +141,7 @@ def load_css():
         margin-right: 0.5rem;
     }
     .feature-card {
-        background-color: #313244;
+        background-color: #f8f9fa;
         border-radius: 10px;
         padding: 1.2rem;
         margin-bottom: 1rem;
@@ -165,13 +158,12 @@ def load_css():
         margin-bottom: 0.5rem;
     }
     .feature-title {
-        color: #89b4fa;
+        color: #4f8bf9;
         font-size: 1.1rem;
         font-weight: bold;
         margin-bottom: 0.5rem;
     }
     .feature-description {
-        color: #cdd6f4;
         font-size: 0.9rem;
     }
     .tooltip {
@@ -182,8 +174,7 @@ def load_css():
     .tooltip .tooltiptext {
         visibility: hidden;
         width: 200px;
-        background-color: #1e1e2e;
-        color: #cdd6f4;
+        background-color: #f8f9fa;
         text-align: center;
         border-radius: 6px;
         padding: 5px;
@@ -194,33 +185,32 @@ def load_css():
         margin-left: -100px;
         opacity: 0;
         transition: opacity 0.3s;
-        border: 1px solid #89b4fa;
+        border: 1px solid #4f8bf9;
     }
     .tooltip:hover .tooltiptext {
         visibility: visible;
         opacity: 1;
     }
     .welcome-banner {
-        background: linear-gradient(135deg, #313244, #1e1e2e);
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
         border-radius: 10px;
         padding: 1.5rem;
         margin-bottom: 1.5rem;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        border-left: 5px solid #89b4fa;
+        border-left: 5px solid #4f8bf9;
     }
     .welcome-title {
-        color: #89b4fa;
+        color: #4f8bf9;
         font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: 0.5rem;
     }
     .welcome-text {
-        color: #cdd6f4;
         margin-bottom: 1rem;
     }
     .help-text {
-        background-color: rgba(166, 227, 161, 0.1);
-        border-left: 3px solid #a6e3a1;
+        background-color: rgba(76, 175, 80, 0.1);
+        border-left: 3px solid #4CAF50;
         padding: 0.8rem;
         margin: 1rem 0;
         border-radius: 0 5px 5px 0;
@@ -233,20 +223,20 @@ def load_css():
         font-weight: bold;
     }
     .status-reading {
-        background-color: rgba(137, 180, 250, 0.2);
-        color: #89b4fa;
+        background-color: rgba(79, 139, 249, 0.2);
+        color: #4f8bf9;
     }
     .status-completed {
-        background-color: rgba(166, 227, 161, 0.2);
-        color: #a6e3a1;
+        background-color: rgba(76, 175, 80, 0.2);
+        color: #4CAF50;
     }
     .status-to-read {
-        background-color: rgba(249, 226, 175, 0.2);
-        color: #f9e2af;
+        background-color: rgba(255, 193, 7, 0.2);
+        color: #FFC107;
     }
     .status-dnf {
-        background-color: rgba(243, 139, 168, 0.2);
-        color: #f38ba8;
+        background-color: rgba(244, 67, 54, 0.2);
+        color: #F44336;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -545,7 +535,6 @@ def display_dashboard(conn, is_new_user):
             margin=dict(l=20, r=20, t=30, b=20),
             paper_bgcolor="rgba(0,0,0,0)",
             plot_bgcolor="rgba(0,0,0,0)",
-            font=dict(color="#cdd6f4")
         )
         st.plotly_chart(fig, use_container_width=True)
     else:
@@ -621,11 +610,11 @@ def display_books(conn):
                 # Updated card HTML with explicit text colors
                 st.markdown(f"""
                 <div class="card">
-                    <h3 style="color: #89b4fa;">{book[1]}</h3>
-                    <p style="color: #cdd6f4;">By {book[2]}</p>
-                    <p style="color: #cdd6f4;">Genre: {book[3]}</p>
-                    <p style="color: #cdd6f4;">Status: {get_status_badge(book[8])}</p>
-                    <p style="color: #f9e2af;">Rating: {"⭐" * int(book[7]) if book[7] else "Not rated"}</p>
+                    <h3>{book[1]}</h3>
+                    <p>By {book[2]}</p>
+                    <p>Genre: {book[3]}</p>
+                    <p>Status: {get_status_badge(book[8])}</p>
+                    <p>Rating: {"⭐" * int(book[7]) if book[7] else "Not rated"}</p>
                 </div>
                 """, unsafe_allow_html=True)
                 
@@ -811,7 +800,7 @@ def display_statistics(conn):
     with col1:
         st.markdown("""
         <div class="dashboard-card">
-            <div style="font-size: 2.5rem; text-align: center; color: #89b4fa; font-weight: bold;">
+            <div style="font-size: 2.5rem; text-align: center; color: #4f8bf9; font-weight: bold;">
                 📚 {}
             </div>
             <div style="text-align: center; margin-top: 0.5rem; font-size: 1.2rem;">
@@ -823,7 +812,7 @@ def display_statistics(conn):
     with col2:
         st.markdown("""
         <div class="dashboard-card">
-            <div style="font-size: 2.5rem; text-align: center; color: #89b4fa; font-weight: bold;">
+            <div style="font-size: 2.5rem; text-align: center; color: #4f8bf9; font-weight: bold;">
                 📄 {:,}
             </div>
             <div style="text-align: center; margin-top: 0.5rem; font-size: 1.2rem;">
@@ -835,7 +824,7 @@ def display_statistics(conn):
     with col3:
         st.markdown("""
         <div class="dashboard-card">
-            <div style="font-size: 2.5rem; text-align: center; color: #89b4fa; font-weight: bold;">
+            <div style="font-size: 2.5rem; text-align: center; color: #4f8bf9; font-weight: bold;">
                 ⭐ {:.1f}
             </div>
             <div style="text-align: center; margin-top: 0.5rem; font-size: 1.2rem;">
@@ -868,7 +857,6 @@ def display_statistics(conn):
             margin=dict(l=20, r=20, t=30, b=20),
             paper_bgcolor="rgba(0,0,0,0)",
             plot_bgcolor="rgba(0,0,0,0)",
-            font=dict(color="#cdd6f4")
         )
         st.plotly_chart(fig, use_container_width=True)
     else:
@@ -900,7 +888,6 @@ def display_statistics(conn):
             margin=dict(l=20, r=20, t=30, b=20),
             paper_bgcolor="rgba(0,0,0,0)",
             plot_bgcolor="rgba(0,0,0,0)",
-            font=dict(color="#cdd6f4")
         )
         st.plotly_chart(fig, use_container_width=True)
     else:
@@ -931,7 +918,6 @@ def display_statistics(conn):
                 margin=dict(l=20, r=20, t=30, b=20),
                 paper_bgcolor="rgba(0,0,0,0)",
                 plot_bgcolor="rgba(0,0,0,0)",
-                font=dict(color="#cdd6f4")
             )
             st.plotly_chart(fig, use_container_width=True)
         else:
@@ -962,7 +948,6 @@ def display_statistics(conn):
                 margin=dict(l=20, r=20, t=30, b=20),
                 paper_bgcolor="rgba(0,0,0,0)",
                 plot_bgcolor="rgba(0,0,0,0)",
-                font=dict(color="#cdd6f4")
             )
             st.plotly_chart(fig, use_container_width=True)
         else:
@@ -1178,5 +1163,3 @@ def delete_book(conn, book_id):
 
 if __name__ == "__main__":
     main()
-
-

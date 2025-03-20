@@ -218,24 +218,6 @@ def load_css():
         color: #cdd6f4;
         margin-bottom: 1rem;
     }
-    .quick-action {
-        background-color: #89b4fa;
-        color: #1e1e2e;
-        font-weight: bold;
-        border-radius: 5px;
-        border: none;
-        padding: 0.5rem 1rem;
-        margin-right: 0.5rem;
-        transition: all 0.3s ease;
-        display: inline-block;
-        text-align: center;
-        text-decoration: none;
-    }
-    .quick-action:hover {
-        background-color: #b4befe;
-        transform: translateY(-2px);
-        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    }
     .help-text {
         background-color: rgba(166, 227, 161, 0.1);
         border-left: 3px solid #a6e3a1;
